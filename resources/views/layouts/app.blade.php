@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/coreui@2.1.16/dist/css/coreui.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@icon/coreui-icons-free@1.0.1-alpha.1/coreui-icons-free.css">
+    <link href='https://css.gg/menu-boxed.css' rel='stylesheet'>
+    <link href='https://css.gg/folder.css' rel='stylesheet'>
+    <link href='https://css.gg/eye.css' rel='stylesheet'>
+    <link href='https://css.gg/user-list.css' rel='stylesheet'>
+    <link href='https://css.gg/phone.css' rel='stylesheet'>
 
      <!-- PRO version // if you have PRO version licence than remove comment and use it. -->
     {{--<link rel="stylesheet" href="https://unpkg.com/@coreui/icons@1.0.0/css/brand.min.css">--}}
@@ -27,9 +32,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
-        <img class="navbar-brand-full" src="" width="30" height="30"
+        <img class="navbar-brand-full" width="30" height="30"
              alt="RumahBaim">
-        <img class="navbar-brand-minimized" src="" width="30"
+        <img class="navbar-brand-minimized" width="30"
              height="30" alt="RumahBaim">
     </a>
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
