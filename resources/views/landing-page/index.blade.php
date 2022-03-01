@@ -7,6 +7,9 @@
         font-family: 'Poppins';
         font-size: 36px;
     }
+    .title-about h2{
+        color: white;
+    }
     #img-about{
         Height: 468px;
         Width: 428px;
@@ -23,24 +26,31 @@
     .about-content{
         font-size: 20px;
         line-height: 30px;
+        margin-top: -6px;
+    }
+    .about-content p{
+        color: white;
+    }
+    .about-content h2{
+        font-size: 20px;
+        line-height: 30px;
         margin-top: 85px;
     }
-    .btn-more{
-        font-family: "Poppins";
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 13px;
-        letter-spacing: 1px;
-        display: inline-block;
-        padding: 6px 24px;
-        border-radius: 50px;
-        transition: 0.5s;
-        margin-bottom: 30px;
-        border: 2px solid #71c55d;
-        background: #fff;
-        color: #71c55d;
-        text-decoration: none;
-        margin-left: 150px;
+    #about-us .about-content h2{
+        color: white;
+        font-weight: 700;
+    }
+    #about-us .about-content span{
+        font-weight: 700;
+        padding-right: 10px;
+        color: #85C36A;
+        text-transform: none;
+    }
+    #about-us{
+        background-image: url("img/tentangkami1.png");
+        height: 100%;
+        background-repeat: no-repeat;
+        background-color: #333;
     }
 </style>
 @endsection
@@ -59,34 +69,34 @@
 
         <!-- ======= About Us Section ======= -->
         <section id="about-us" class="about-us padd-section">
-        <div class="container" data-aos="fade-up">
-            <div class="row justify-content-center">
+            <div class="container" data-aos="fade-up">
+                <div class="row justify-content-center">
 
-            <div class="title-about">
-                <h2>Tentang Kami</h2>
-            </div>
-            
-            <div class="line-title">
-                <img id="img-about1" src="img/about1.png" alt="">
-            </div>
-
-            <div class="col-md-5">
-                <img id="img-about" src="img/about.png" alt="About" data-aos="zoom-in" data-aos-delay="100">
-            </div>
-
-            <div class="col-md-7 col-lg-5">
-                <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <div class="title-about">
+                    <h2>Tentang Kami</h2>
+                </div>
                 
-                <a href="#" class="btn-more">Selengkapnya</a>
+                <div class="line-title">
+                    <img id="img-about1" src="img/about1.png" alt="">
+                </div>
+
+                <div class="col-md-5">
+                    <img id="img-about" src="img/about.png" alt="About" data-aos="zoom-in" data-aos-delay="100">
+                </div>
+
+                <div class="col-md-7 col-lg-5">
+                    <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+
+                        <h2><span>Rumah</span>Baim</h2>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+
+                    </div>
+                </div>
 
                 </div>
             </div>
-
-            </div>
-        </div>
         </section><!-- End About Us Section -->
 
         <!-- ======= Features Section ======= -->

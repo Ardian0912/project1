@@ -1,3 +1,17 @@
+<style>
+  #header{
+    background-color: #333333;
+  }
+  #header.header-scrolled{
+    background-color: #333333;
+  }
+  .navbar a, .navbar a:focus{
+    color: white;
+  }
+  #header #logo h1 a{
+    color: white;
+  }
+</style>
 <!-- ======= Header ======= -->
 <header id="header" class="header fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
