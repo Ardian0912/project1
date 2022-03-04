@@ -8,6 +8,10 @@
   .navbar a, .navbar a:focus{
     color: white;
   }
+  #header #logo img {
+    width: auto;
+    height: 72px;
+  }
   #header #logo h1 a{
     color: white;
   }
@@ -17,9 +21,9 @@
     <div class="container d-flex align-items-center justify-content-between">
 
       <div id="logo">
-        <h1><a href="index.html"><span>Rumah</span>Baim</a></h1>
+        <!-- <h1><a href="index.html"><span>Rumah</span>Baim</a></h1> -->
         <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" title="" /></a>-->
+        <a href="index.html"><img src="img/logorb.png" alt="" title="" /></a>
       </div>
 
       <nav id="navbar" class="navbar">

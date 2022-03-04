@@ -4,9 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateKontensTable extends Migration
+class CreateRelationsTable extends Migration
 {
-
     /**
      * Run the migrations.
      *
@@ -14,12 +13,12 @@ class CreateKontensTable extends Migration
      */
     public function up()
     {
-        Schema::create('kontens', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('jenis');
-            $table->string('isi');
-            $table->timestamps();
-            $table->softDeletes();
+        Schema::table('galeri', function (Blueprint $table) {
+            $table->foreignId('porto_id')
+                ->nullable()
+                ->constrained('portofolio')
+                ->onUpdate('cascade')
+                ->onDelete('cascade');
         });
     }
 
@@ -30,6 +29,6 @@ class CreateKontensTable extends Migration
      */
     public function down()
     {
-        Schema::drop('kontens');
+        Schema::dropIfExists('relations');
     }
 }

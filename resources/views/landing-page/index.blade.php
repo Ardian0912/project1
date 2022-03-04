@@ -2,6 +2,36 @@
 @section('title','Rumah Baim Website') <!-- name title -->
 @section('css-internal')
 <style>
+    #hero{
+        background-image:none;
+        height: auto;
+        margin-top: 192px;
+    }
+    #hero h2{
+        color: #F17922;
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-family: 'Inter';
+        font-weight: bold;
+    }
+    #hero h2 span{
+        color: black;
+        margin-bottom: 30px;
+        font-size: 32px;
+        font-family: 'Inter';
+        font-weight: bold;
+    }
+    #hero .col-md-5 p{
+        color: #333333;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        margin-left: 1px;
+    }
+    .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+        color: #F17922;
+    }
     .title-about{
         text-align: center;
         font-family: 'Poppins';
@@ -11,9 +41,9 @@
         color: white;
     }
     #img-about{
-        Height: 468px;
-        Width: 428px;
-        margin-top: 80px;
+        Height: 240px;
+        Width: auto;
+        margin-top: 46px;
     }
     #img-about1{
         display: block;
@@ -30,40 +60,57 @@
     }
     .about-content p{
         color: white;
+        text-align: justify;
+        margin-left: -71px;
     }
     .about-content h2{
         font-size: 20px;
         line-height: 30px;
         margin-top: 85px;
     }
-    #about-us .about-content h2{
-        color: white;
-        font-weight: 700;
-    }
-    #about-us .about-content span{
-        font-weight: 700;
-        padding-right: 10px;
-        color: #85C36A;
-        text-transform: none;
-    }
     #about-us{
         background-image: url("img/tentangkami1.png");
+        background-size: 1831px;
         height: 100%;
         background-repeat: no-repeat;
         background-color: #333;
     }
+    .col-md-5 h2{
+        color: white;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+    }
+    .col-md-5 p{
+        color: white;
+        font-family: 'Red Hat Display';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        margin-left: 6px;
+    }
 </style>
 @endsection
 @section('konten')
-<!-- ======= Hero Section ======= -->
+<!-- ======= Home Section ======= -->
     <section id="hero">
-        <div class="hero-container" data-aos="fade-in">
-        <h1>Welcome to Rumah Baim</h1>
-        <h2>Elegant Bootstrap Template for Startups, Apps &amp; more...</h2>
-        <img src="assets/img/hero-img.png" alt="Hero Imgs" data-aos="zoom-out" data-aos-delay="100">
-        <a href="#about-us" class="btn-get-started scrollto">Get Started</a>
+        <div class="row justify-content-center">
+            <div class="col-md-5">
+                <h2><span>Membangun Rumah itu Mudah Bersama Tim</span> Rumah Baim!</h2>
+                <p>Kami Menyediakan Layanan Jasa Untuk Mewujudkan Rumah Impian Anda</p>
+                <a href="#screenshots" class="btn-get-started scrollto">View Project</a>
+                <a href="#contact" class="btn-get-started scrollto">Hubungi Kami</a>
+            </div>
+
+            <div class="col-md-7 col-lg-5">
+                <div class="videoWrapper">
+                    <!-- Copy & Pasted from YouTube -->
+                    <iframe width="560" height="349" src="https://www.youtube.com/embed/kCPQUAtMZR4" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
         </div>
-    </section><!-- End Hero Section -->
+    </section><!-- End Home Section -->
 
     <main id="main">
 
@@ -72,32 +119,41 @@
             <div class="container" data-aos="fade-up">
                 <div class="row justify-content-center">
 
-                <div class="title-about">
-                    <h2>Tentang Kami</h2>
-                </div>
-                
-                <div class="line-title">
-                    <img id="img-about1" src="img/about1.png" alt="">
-                </div>
-
-                <div class="col-md-5">
-                    <img id="img-about" src="img/about.png" alt="About" data-aos="zoom-in" data-aos-delay="100">
-                </div>
-
-                <div class="col-md-7 col-lg-5">
-                    <div class="about-content" data-aos="fade-left" data-aos-delay="100">
-
-                        <h2><span>Rumah</span>Baim</h2>
-
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-
+                    <div class="title-about">
+                        <h2>Tentang Kami</h2>
                     </div>
-                </div>
+                    
+                    <div class="line-title">
+                        <img id="img-about1" src="img/about1.png" alt="">
+                    </div>
+
+                    <div class="col-md-5">
+                        <img id="img-about" src="img/logorb.png" alt="About" data-aos="zoom-in" data-aos-delay="100">
+                        <h2>RB PROPERTY</h2>
+                        <p>"Membangun Rumah itu Mudah"</p>
+                    </div>
+
+                    <div class="col-md-7 col-lg-5">
+                        <div class="about-content" data-aos="fade-left" data-aos-delay="100">
+                            <p>Rumah Baim merupakan Studio Arsitek yang menyediakan<br>layanan jasa pada bidang Konstruksi. Layanan utama dari<br>Rumah Baim yakni pembuatan desain rumah, pembangunan,<br>renovasi, dan desain interior.
+                            </p>
+                            <br>
+                            <p>Rumah Baim merupakan Studio Arsitek yang menyediakan<br>layanan jasa pada bidang Konstruksi. Layanan utama dari<br>Rumah Baim yakni pembuatan desain rumah, pembangunan,<br>renovasi, dan desain interior.
+                            </p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
         </section><!-- End About Us Section -->
+
+        <!-- procedure section -->
+        <section id="about-us-extended" class="about-us padd-section">
+            <div class="container">
+
+            </div>
+        </section>
+        <!-- end procedure section -->
 
         <!-- ======= Features Section ======= -->
         <section id="features" class="padd-section text-center">
