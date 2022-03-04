@@ -32,9 +32,9 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">
-        <img class="navbar-brand-full" width="30" height="30"
-             alt="RumahBaim">
-        <img class="navbar-brand-minimized" width="30"
+        <img class="navbar-brand-full" width="30" height="30" src="{{ URL::to('/') }}/assets/img/logorb.png"
+             alt="RumahBaim"><span style="color: #F17922">Rumah Baim</span>
+        <img class="navbar-brand-minimized" width="30" src="{{ URL::to('/') }}/assets/img/logorb.png"
              height="30" alt="RumahBaim">
     </a>
     <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">

@@ -54,6 +54,15 @@ class portofolioController extends AppBaseController
      */
     public function store(CreateportofolioRequest $request)
     {
+        $this->validate($request,[
+            'nama' => 'required',
+            'deskripsi' => 'required',
+            'photo' => 'required'
+        ]);
+        $file = Request()->$request->file('photo');
+        $tujuan_upload = 'public/data_photo_portofolio';
+        $file->move($tujuan_upload, $file->getClientOriginalName());
+
         $input = $request->all();
 
         $portofolio = $this->portofolioRepository->create($input);
